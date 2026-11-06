@@ -1,0 +1,163 @@
+backend:
+  name: github
+  repo: abababala/haven-suites
+  branch: main
+media_folder: assets/uploads
+public_folder: assets/uploads
+collections:
+  - name: site
+    label: Site content
+    files:
+      - name: settings
+        label: Brand and settings
+        file: data/settings.json
+        format: json
+        fields:
+          - {label: Hotel name, name: name, widget: string}
+          - {label: Logo text, name: logo_text, widget: string}
+          - {label: Logo image (optional and replaces text), name: logo_image, widget: image, required: false}
+          - {label: Browser tab icon, name: favicon, widget: image, required: false}
+          - {label: Browser tab title, name: site_title, widget: string}
+          - {label: Google description, name: site_desc, widget: text}
+          - {label: Tagline, name: tagline, widget: string}
+          - {label: Background colour, name: bg, widget: color}
+          - {label: Text colour, name: ink, widget: color}
+          - {label: Accent colour, name: accent, widget: color}
+          - {label: Currency symbol, name: currency, widget: string}
+          - {label: Phone, name: phone, widget: string}
+          - {label: WhatsApp number (digits only), name: whatsapp, widget: string}
+          - {label: Email, name: email, widget: string}
+          - {label: Address, name: address, widget: string}
+          - {label: City, name: city, widget: string}
+          - {label: Opening hours, name: hours, widget: string}
+          - {label: Map search text (optional), name: map_query, widget: string, required: false}
+          - {label: Instagram link, name: instagram, widget: string, required: false}
+          - {label: Facebook link, name: facebook, widget: string, required: false}
+          - {label: TikTok link, name: tiktok, widget: string, required: false}
+          - {label: X link, name: x, widget: string, required: false}
+      - name: home
+        label: Home page
+        file: data/home.json
+        format: json
+        fields:
+          - label: Slideshow
+            name: slides
+            widget: list
+            fields:
+              - {label: Photo, name: image, widget: image, required: false}
+              - {label: Headline, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - {label: Button text, name: button, widget: string}
+              - {label: Button link, name: link, widget: string}
+          - {label: Intro heading, name: intro_title, widget: string}
+          - {label: Intro text, name: intro_text, widget: text}
+          - {label: Rooms heading, name: rooms_title, widget: string}
+          - {label: Amenities heading, name: amenities_title, widget: string}
+          - {label: Offers heading, name: offers_title, widget: string}
+          - label: Offers
+            name: offers
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+          - {label: Video heading, name: video_title, widget: string, required: false}
+          - {label: YouTube video link (leave empty to hide), name: video_url, widget: string, required: false}
+          - {label: Reviews heading, name: tm_title, widget: string}
+          - label: Reviews
+            name: testimonials
+            widget: list
+            fields:
+              - {label: Quote, name: quote, widget: text}
+              - {label: Name, name: name, widget: string}
+          - {label: FAQ heading, name: faq_title, widget: string}
+          - label: FAQ
+            name: faq
+            widget: list
+            fields:
+              - {label: Question, name: q, widget: string}
+              - {label: Answer, name: a, widget: text}
+          - {label: Bottom heading, name: cta_title, widget: string}
+          - {label: Bottom text, name: cta_text, widget: text}
+          - {label: Bottom button, name: cta_button, widget: string}
+      - name: pages
+        label: Other pages
+        file: data/pages.json
+        format: json
+        fields:
+          - {label: Rooms title, name: rooms_title, widget: string}
+          - {label: Rooms text, name: rooms_text, widget: text}
+          - {label: Amenities title, name: amen_title, widget: string}
+          - {label: Amenities text, name: amen_text, widget: text}
+          - label: Amenities
+            name: amenities
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+          - {label: Gallery title, name: gallery_title, widget: string}
+          - {label: Gallery text, name: gallery_text, widget: text}
+          - label: Gallery photos
+            name: gallery
+            widget: list
+            fields:
+              - {label: Photo, name: image, widget: image}
+              - {label: Category (for example Rooms), name: category, widget: string}
+          - {label: Events title, name: events_title, widget: string}
+          - {label: Events text, name: events_text, widget: text}
+          - label: Event halls
+            name: halls
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Capacity, name: capacity, widget: string}
+              - {label: Description, name: description, widget: text}
+              - {label: Photo, name: image, widget: image, required: false}
+          - {label: Booking title, name: booking_title, widget: string}
+          - {label: Booking text, name: booking_text, widget: text}
+          - {label: About title, name: about_title, widget: string}
+          - {label: About text, name: about_text, widget: text}
+          - {label: About photo, name: about_image, widget: image, required: false}
+          - label: About points
+            name: values
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+          - {label: Contact title, name: contact_title, widget: string}
+          - {label: Contact text, name: contact_text, widget: text}
+      - name: rooms
+        label: Rooms
+        file: data/rooms.json
+        format: json
+        fields:
+          - label: Rooms
+            name: items
+            widget: list
+            fields:
+              - {label: Room name, name: name, widget: string}
+              - {label: Class (for example Deluxe), name: class, widget: string}
+              - {label: Price (numbers only), name: price, widget: string}
+              - {label: Price note (for example per night), name: price_note, widget: string}
+              - {label: Guests, name: guests, widget: string}
+              - {label: Bed type, name: beds, widget: string}
+              - {label: Size, name: size, widget: string, required: false}
+              - {label: Description, name: description, widget: text}
+              - {label: Amenities, name: amenities, widget: list, required: false, field: {label: Amenity, name: amenity, widget: string}}
+              - {label: Photos (first one is the cover), name: gallery, widget: list, required: false, field: {label: Photo, name: photo, widget: image}}
+      - name: builder
+        label: Built by (services page)
+        file: data/builder.json
+        format: json
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Headline, name: headline, widget: string}
+          - {label: About me, name: about, widget: text}
+          - label: Services and skills
+            name: services
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text}
+          - {label: Email, name: email, widget: string}
+          - {label: Phone, name: phone, widget: string}
+          - {label: WhatsApp number (digits only), name: whatsapp, widget: string}
