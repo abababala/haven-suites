@@ -1,5 +1,95 @@
-{"items":[
-{"name":"Standard Room","class":"Standard","price":"85,000","price_note":"per night","guests":"2","beds":"1 queen bed","size":"28 sqm","description":"A comfortable, well-lit room with everything needed for a short stay.","amenities":["Air conditioning","Wi-Fi","Smart TV","Work desk"],"gallery":[]},
-{"name":"Deluxe Room","class":"Deluxe","price":"120,000","price_note":"per night","guests":"2","beds":"1 king bed","size":"36 sqm","description":"More space, a sitting area and a calm outlook, ideal for longer visits.","amenities":["Air conditioning","Wi-Fi","Smart TV","Mini bar","Sitting area"],"gallery":[]},
-{"name":"Executive Suite","class":"Suite","price":"190,000","price_note":"per night","guests":"3","beds":"1 king bed and sofa bed","size":"55 sqm","description":"A separate living area and bedroom, designed for guests who want extra space.","amenities":["Living room","Wi-Fi","Smart TV","Mini bar","Bathtub"],"gallery":[]},
-{"name":"One Bedroom Apartment","class":"Serviced Apartment","price":"2,400,000","price_note":"per month","guests":"2","beds":"1 king bed","size":"70 sqm","description":"A fully serviced apartment with a kitchen, living area and weekly housekeeping.","amenities":["Full kitchen","Living area","Wi-Fi","Housekeeping","Washer"],"gallery":[]}]}
+{
+  "items": [
+    {
+      "name": "Standard Room",
+      "class": "Standard",
+      "price": "85,000",
+      "price_note": "per night",
+      "guests": "2",
+      "beds": "1 queen bed",
+      "size": "28 sqm",
+      "description": "A comfortable, well-lit room with everything needed for a short stay.",
+      "amenities": [
+        "Air conditioning",
+        "Wi-Fi",
+        "Smart TV",
+        "Work desk"
+      ],
+      "gallery": [
+        "/assets/uploads/IMG_4790.jpeg",
+        "/assets/uploads/IMG_4791.jpeg",
+        "/assets/uploads/IMG_4792.jpeg",
+        "/assets/uploads/IMG_4793.jpeg"
+      ]
+    },
+    {
+      "name": "Deluxe Room",
+      "class": "Deluxe",
+      "price": "120,000",
+      "price_note": "per night",
+      "guests": "2",
+      "beds": "1 king bed",
+      "size": "36 sqm",
+      "description": "More space, a sitting area and a calm outlook, ideal for longer visits.",
+      "amenities": [
+        "Air conditioning",
+        "Wi-Fi",
+        "Smart TV",
+        "Mini bar",
+        "Sitting area"
+      ],
+      "gallery": [
+        "/assets/uploads/IMG_4795.jpeg",
+        "/assets/uploads/IMG_4796.jpeg",
+        "/assets/uploads/IMG_4794.jpeg",
+        "/assets/uploads/IMG_4797.jpeg"
+      ]
+    },
+    {
+      "name": "Executive Suite",
+      "class": "Suite",
+      "price": "190,000",
+      "price_note": "per night",
+      "guests": "3",
+      "beds": "1 king bed and sofa bed",
+      "size": "55 sqm",
+      "description": "A separate living area and bedroom, designed for guests who want extra space.",
+      "amenities": [
+        "Living room",
+        "Wi-Fi",
+        "Smart TV",
+        "Mini bar",
+        "Bathtub"
+      ],
+      "gallery": [
+        "/assets/uploads/IMG_4798.jpeg",
+        "/assets/uploads/IMG_4801.jpeg",
+        "/assets/uploads/IMG_4799.jpeg",
+        "/assets/uploads/IMG_4800.jpeg"
+      ]
+    },
+    {
+      "name": "One Bedroom Apartment",
+      "class": "Serviced Apartment",
+      "price": "2,400,000",
+      "price_note": "per month",
+      "guests": "2",
+      "beds": "1 king bed",
+      "size": "70 sqm",
+      "description": "A fully serviced apartment with a kitchen, living area and weekly housekeeping.",
+      "amenities": [
+        "Full kitchen",
+        "Living area",
+        "Wi-Fi",
+        "Housekeeping",
+        "Washer"
+      ],
+      "gallery": [
+        "/assets/uploads/IMG_4803.jpeg",
+        "/assets/uploads/IMG_4804.jpeg",
+        "/assets/uploads/IMG_4805.jpeg",
+        "/assets/uploads/IMG_4806.jpeg"
+      ]
+    }
+  ]
+}
